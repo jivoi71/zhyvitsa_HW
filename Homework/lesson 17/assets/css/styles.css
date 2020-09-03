@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+table {
+    width: 500px;
+    margin: 0 auto;
+}
+
+table thead tr {
+    background: lightblue;
+}
+
+table th, 
+table td {
+    padding: 7px 15px;
+}
