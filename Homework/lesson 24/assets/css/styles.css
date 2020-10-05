@@ -7,3 +7,46 @@
     -webkit-box-sizing: border-box;
 }
 
+.order {
+    width: 500px;
+    max-width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.order > div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.order > div > label {
+    flex-basis: 28%;
+}
+
+.order__field {
+    flex-grow: 1;
+}
+
+.order > div > button {
+    margin: 20px 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.order-list {
+    width: 500px;
+    max-width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.order-list > h2 {
+    padding: 20px 0;
+}
+
+.order-list__pay {
+    padding: 10px 0;
+}
