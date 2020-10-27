@@ -2,6 +2,10 @@ import React from 'react';
 import logo from './img/Logo.png';
 import './App.css';
 
+//components
+import Home from './components/pages/Home/Home';
+import About from './components/pages/About/About';
+
 function App() {
   return (
     <div className="App">
@@ -22,21 +26,8 @@ function App() {
           </div>
         </header>
 
-        <main className="main-content">
-          <div className="banner">
-            <div className="banner-content">
-              <h2>We build it with passion</h2>
-              <p>Just to be clear, we do this for fun not for you, just kidding.</p>
-              <button type="button">Read more</button>
-            </div>
-          </div>
-
-          <div className="about-us">
-            
-          </div>
-
-
-        </main>
+         <Home/>
+         <About/>
 
         <footer className="footer">
 

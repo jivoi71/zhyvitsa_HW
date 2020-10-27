@@ -62,11 +62,131 @@
 /*About us*/
 
 .about-us {
-  max-width: 100%;
-  height: 1333px;
-  background: #1d1d1d url(img/bg.png) no-repeat;
-  background-size: 100%;
-  background-position: bottom;
+height: 1332px;
+}
+
+
+.years {
+  position: relative;
+  padding: 139px 0 472px;
+  background: #1d1d1d;
+}
+.years:before,
+.years:after {
+  position: absolute;
+  content: '';
+}
+.years:before {
+  z-index: 20;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 100%;
+  background: #fff;
+
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.years:after {
+  z-index: 10;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 236px;
+  background: url(img/bg.png) no-repeat center bottom;
+  background-size: contain;
+}
+
+.years__item {
+  margin-bottom: 8px;
+}
+.years__item:last-child {
+  margin-bottom: 0;
+}
+.years__item.years__item-big-point {
+  margin-top: 97px;
+  margin-bottom: 85px;
+}
+
+.years__item-content {
+  position: relative;
+  padding-left: 85px;
+  width: 50%;
+  float: right;
+}
+.years__item.years__item-left .years__item-content {
+  padding-left: 0;
+  padding-right: 85px;
+  float: left;
+}
+
+
+  .years__item-content:after {
+      position: absolute;
+      z-index: 25;
+      top: 11px;
+      left: -17px;
+      width: 24px;
+      height: 24px;
+      border: 5px solid #fff;
+      background: #1d1d1d;
+
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      
+      content: '';
+  }
+  .years__item.years__item-left .years__item-content:after {
+      left: auto;
+      right: -17px;
+  }
+  
+  .years__item-big-point .years__item-content:after {
+      left: -28px;
+      width: 46px;
+      height: 46px;
+  }
+  .years__item.years__item-left.years__item-big-point .years__item-content:after {
+      left: auto;
+      right: -28px;
+  }
+
+.years__item-year {
+  margin-bottom: 13px;
+  font-family: 'HelveticaNeueLTProRoman';
+  font-size: 48px;
+  color: #fefefe;
+  text-align: left;
+  clear: both;
+}
+.years__item.years__item-left .years__item-year {
+  text-align: right;
+}
+
+.years__item-text {
+  float: left;
+  max-width: 388px;
+  font-size: 15px;
+  color: #b7b7b7;
+  line-height: 22px;
+}
+.years__item.years__item-left .years__item-text {
+  float: right;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: '';
 }
 
 
